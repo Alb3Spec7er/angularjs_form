@@ -29,6 +29,7 @@ angular.module('myApp', ['ajoslin.promise-tracker'])
         params : {
           'callback' : 'JSON_CALLBACK',
           'name' : $scope.name,
+          'surname' : $scope.surname,
           'email' : $scope.email,
           'subjectList' : $scope.subjectList,
           'url' : $scope.url,
@@ -41,6 +42,7 @@ angular.module('myApp', ['ajoslin.promise-tracker'])
         .success(function(data, status, headers, config) {
           if (data.status == 'OK') {
             $scope.name = null;
+            $scope.surname = null;
             $scope.email = null;
             $scope.subjectList = null;
             $scope.url = null;

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
   </head>
   <body class="container">
-  
+
   <h2>AngularJs form</h2>
 
   <p>This is an AngularJs based form. It uses a controller to handle form validation and submission.</p>
@@ -26,10 +26,15 @@
       </div>
 
       <div class="form-group">
+        <label for="name">Your Surname </label>
+        <input type="text" name="surname" data-ng-model="surname" class="form-control" />
+      </div>
+
+      <div class="form-group">
         <label for="email">Your E-mail address</label>
         <span class="label label-danger" data-ng-show="submitted && helpForm.email.$error.required">Required!</span>
         <span class="label label-danger" data-ng-show="submitted && helpForm.$error.email">Invalid email!</span>
-        <input type="email" name="email" data-ng-model="email" class="form-control" required />  
+        <input type="email" name="email" data-ng-model="email" class="form-control" required />
       </div>
 
       <div class="form-group">
