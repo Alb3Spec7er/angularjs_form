@@ -8,6 +8,7 @@ angular.module('myApp', ['ajoslin.promise-tracker'])
       'account': 'Account Problems',
       'mobile': 'Mobile',
       'user': 'Report a Malicious User',
+      'help' : 'Help Request',
       'other': 'Other'
     };
 
